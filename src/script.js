@@ -26,7 +26,8 @@
     return;
 
   const video = videos[0];
-
+  video.disablePictureInPicture = undefined;
+  
   if (video.hasAttribute('__pip__')) {
     await document.exitPictureInPicture();
   } else {
